@@ -1,0 +1,6 @@
+/app/src/test/java/com/fiverr/controller/GigControllerTest.java
+/app/src/test/java/com/fiverr/controller/UserControllerTest.java
+/app/src/test/java/com/fiverr/service/OrderServiceTest.java
+/app/src/test/java/com/fiverr/service/UserServiceTest.java
+/app/src/test/java/com/fiverr/controller/OrderControllerTest.java
+/app/src/test/java/com/fiverr/service/GigServiceTest.java

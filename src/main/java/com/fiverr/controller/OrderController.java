@@ -38,16 +38,16 @@ public class OrderController {
 
     @PutMapping("/{id}/status")
     public ResponseEntity<Order> updateOrderStatus(@PathVariable Long id, @RequestBody String status) {
-        return orderService.getOrderById(id)
-                .map(order -> {
-                    // In a real app, you'd have more robust status change logic
-                    // and authorization checks.
-                    if ("ACCEPTED".equals(status) || "REJECTED".equals(status)) {
-                        return ResponseEntity.ok(orderService.updateOrderStatus(order, status));
-                    } else {
-                        return ResponseEntity.badRequest().build();
-                    }
-                })
-                .orElse(ResponseEntity.notFound().build());
+        Optional<Order> orderOptional = orderService.getOrderById(id);
+        if (orderOptional.isPresent()) {
+            Order order = orderOptional.get();
+            if ("ACCEPTED".equals(status) || "REJECTED".equals(status)) {
+                return ResponseEntity.ok(orderService.updateOrderStatus(order, status));
+            } else {
+                return ResponseEntity.badRequest().build();
+            }
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

@@ -1,0 +1,16 @@
+/app/src/main/java/com/fiverr/service/GigService.java
+/app/src/main/java/com/fiverr/controller/OrderController.java
+/app/src/main/java/com/fiverr/controller/GigController.java
+/app/src/main/java/com/fiverr/service/GigServiceImpl.java
+/app/src/main/java/com/fiverr/model/Gig.java
+/app/src/main/java/com/fiverr/model/User.java
+/app/src/main/java/com/fiverr/service/UserService.java
+/app/src/main/java/com/fiverr/repository/OrderRepository.java
+/app/src/main/java/com/fiverr/repository/UserRepository.java
+/app/src/main/java/com/fiverr/service/OrderService.java
+/app/src/main/java/com/fiverr/model/Order.java
+/app/src/main/java/com/fiverr/service/OrderServiceImpl.java
+/app/src/main/java/com/fiverr/FiverrMvpApplication.java
+/app/src/main/java/com/fiverr/controller/UserController.java
+/app/src/main/java/com/fiverr/repository/GigRepository.java
+/app/src/main/java/com/fiverr/service/UserServiceImpl.java

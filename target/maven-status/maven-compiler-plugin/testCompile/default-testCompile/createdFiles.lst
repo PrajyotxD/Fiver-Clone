@@ -1,0 +1,6 @@
+com/fiverr/service/OrderServiceTest.class
+com/fiverr/service/GigServiceTest.class
+com/fiverr/controller/GigControllerTest.class
+com/fiverr/service/UserServiceTest.class
+com/fiverr/controller/OrderControllerTest.class
+com/fiverr/controller/UserControllerTest.class
